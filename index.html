@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mt-5 d-flex justify-content-center">
+      <div class="card" style="max-width: 400px; width: 100%">
+        <h5 class="card-header bg-primary text-white text-center">
+          🌤 Weather Checker
+        </h5>
+        <div class="card-body text-center">
+          <div class="form-group">
+            <label for="pincodeInput">Enter Pincode:</label>
+            <input
+              type="text"
+              id="pincodeInput"
+              class="form-control"
+              placeholder="Enter Pincode"
+            />
+            <div
+              class="alert alert-danger mt-2"
+              id="error"
+              role="alert"
+              style="display: none"
+            ></div>
+          </div>
+          <button onclick="getWeather()" class="btn btn-primary">
+            Get Weather
+          </button>
+          <div id="weatherInfo" class="mt-4" style="display: none">
+            <h4 id="cityName"></h4>
+            <img id="weatherIcon" src="" alt="Weather Icon" />
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="pressure"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

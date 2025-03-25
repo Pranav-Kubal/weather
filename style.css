@@ -1,0 +1,61 @@
+/* General Styles */
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  width: 100vw;
+}
+
+/* Container */
+.container {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Card Styling */
+.card {
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Header */
+.card-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Weather Info */
+#weatherInfo {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Weather Icon */
+#weatherInfo img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Error Message */
+#error {
+  display: none;
+}
+
+/* Input Field */
+.form-control {
+  text-align: center;
+}
+
+/* Button */
+.btn-primary {
+  width: 100%;
+  font-size: 1rem;
+}
